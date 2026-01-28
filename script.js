@@ -1,4 +1,5 @@
 import { sendToGoogleChat } from "./googleChatWebhook.js";
+import dayjs from "dayjs";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -20,15 +21,11 @@ const excludedTasks = ["dummy", "meeting", "miscellaneous"];
 function getDueStatus(epochMs) {
   if (!epochMs) return "NO_DUE_DATE";
 
-  const due = new Date(Number(epochMs));
-  const today = new Date();
-  
-  // Normalize both dates to start of day for comparison
-  due.setHours(0, 0, 0, 0);
-  today.setHours(0, 0, 0, 0);
+  const due = dayjs(Number(epochMs));
+  const today = dayjs().startOf("day");
 
-  if (due < today) return "OVERDUE";
-  if (due.getTime() === today.getTime()) return "TODAY";
+  if (due.isBefore(today)) return "OVERDUE";
+  if (due.isSame(today, "day")) return "TODAY";
   return "UPCOMING";
 }
 
@@ -55,7 +52,7 @@ const getSpaces = async () => {
         );
       })
       .map((task) => {
-        const dueDate = task.due_date ? new Date(Number(task.due_date)) : "";
+        const dueDate = task.due_date ? dayjs(Number(task.due_date)) : "";
         let assignees = task.assignees.map((assignee) =>
           assignee.username.trim(),
         );
@@ -65,7 +62,7 @@ const getSpaces = async () => {
         const result = {
           name: task.name,
           status: task.status?.status,
-          due_date: dueDate ? dueDate.toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric' }) : "",
+          due_date: dueDate ? dueDate.format("DD/MM/YYYY") : "",
           assignees,
           delivery_status: getDueStatus(task.due_date),
         };
