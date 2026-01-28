@@ -15,30 +15,37 @@ function statusBadge(status) {
 
 function formatTask(task) {
   return (
-    `• *${task.name}*\n` +
-    `  👤 ${task.assignees || 'Unassigned'} | ` +
-    `${task.due_date ? `📅 ${task.due_date} | ` : "" }` +
+    `\t• *${task.name}*\n` +
+    `\t${task.due_date ? `📅 ${task.due_date} | ` : "" }` +
     `${statusBadge(task.delivery_status)}`
   );
 }
 
 function formatSection(title, tasks) {
   if (!tasks.length) return '';
-  return `*${title}*\n${tasks.map((task) => formatTask(task)).join('\n\n')}\n\n`;
+  return `*${title}*\n\n${tasks.map((task) => formatTask(task)).join('\n\n')}\n\n`;
 }
 
 export function buildMessage(tasks) {
-  const today = tasks.filter((t) => t.delivery_status === 'TODAY');
-  const overdue = tasks.filter((t) => t.delivery_status === 'OVERDUE');
-  const upcoming = tasks.filter((t) => t.delivery_status === 'UPCOMING');
-  const noDueDate = tasks.filter((t) => t.delivery_status === 'NO_DUE_DATE');
+  // Group tasks by assignee
+  const tasksByAssignee = {};
+  
+  tasks.forEach((task) => {
+    const assignee = task.assignees || 'Unassigned';
+    if (!tasksByAssignee[assignee]) {
+      tasksByAssignee[assignee] = [];
+    }
+    tasksByAssignee[assignee].push(task);
+  });
 
   let text = `📌 *Daily Task Update*\n\n`;
 
-  text += formatSection('🔴 Due Today', today);
-  text += formatSection('⚠️ Overdue', overdue);
-  text += formatSection('🟢 Upcoming', upcoming);
-  text += formatSection('⚪ No Due Date', noDueDate);
+  // Sort assignees alphabetically and format each section
+  Object.keys(tasksByAssignee)
+    .sort()
+    .forEach((assignee) => {
+      text += formatSection(`👤 ${assignee}`, tasksByAssignee[assignee]);
+    });
 
   return { text };
 }
