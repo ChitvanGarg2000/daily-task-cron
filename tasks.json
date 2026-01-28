@@ -1,0 +1,261 @@
+[
+  {
+    "name": "[Rubix] Active Filters and Filtering Options Switched",
+    "status": "code review",
+    "due_date": "30/01/2026",
+    "assignees": "Pranjali Naik",
+    "delivery_status": "UPCOMING"
+  },
+  {
+    "name": "[V&B|T30] Badges Highlight des Monats Februar 2026",
+    "status": "dev in progress",
+    "due_date": "28/01/2026",
+    "assignees": "Amit Mishra",
+    "delivery_status": "TODAY"
+  },
+  {
+    "name": "[Rubix] Remove ‘Confirm’ CTA",
+    "status": "code review",
+    "due_date": "27/01/2026",
+    "assignees": "Kunal Mewara",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[Kaspersky]  MEEN_Cart_Orders_summary_high_contrast + TR_Cart_Orders_summary_high_contrast",
+    "status": "qa backlog",
+    "due_date": "21/01/2026",
+    "assignees": "Pranjali Naik",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[GG|Bergzeit] Global Goals",
+    "status": "waiting on client",
+    "due_date": "15/01/2026",
+    "assignees": "Abhishek Ojha",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[Groupe ELS] Brief Popin formulaire GenIA-L",
+    "status": "qa in progress",
+    "due_date": "14/01/2026",
+    "assignees": "Abhishek Ojha",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[ADAC|T72v2] Follow Up | Versicherung - Startseite Versicherungsübersicht",
+    "status": "dev round2 backlog",
+    "due_date": "14/01/2026",
+    "assignees": "Pranjali Naik",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[Paessler|OB] Global Goals",
+    "status": "waiting on client",
+    "due_date": "14/01/2026",
+    "assignees": "Abhishek Ojha",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[IMA]Notif garanties complémentaires",
+    "status": "waiting on client",
+    "due_date": "14/01/2026",
+    "assignees": "Akriti Bajpai",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[EF|CRO65] Produktliste - Sticky Filter",
+    "status": "dev round2 backlog",
+    "due_date": "31/12/2025",
+    "assignees": "Pranjali Naik",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[Johanniter|T26] Grid statt Slider",
+    "status": "dev in progress",
+    "due_date": "23/12/2025",
+    "assignees": "Amit Mishra",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[Evenflo] Homepage redesign",
+    "status": "waiting on client",
+    "due_date": "15/12/2025",
+    "assignees": "Akriti Bajpai",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[Kaspersky]  LATAM_B2B_Cart_ProductSummary_1ColSummary",
+    "status": "waiting on client",
+    "due_date": "21/11/2025",
+    "assignees": "Pranjali Naik",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[Tchibo|GG] Global Goals",
+    "status": "waiting on client",
+    "due_date": "11/11/2025",
+    "assignees": "",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[MegaBad|#016] Sticky Promo Banner",
+    "status": "backlog",
+    "due_date": "27/10/2025",
+    "assignees": "Abhishek Ojha",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[Trigema I T38] Galerie statt Grid PDP",
+    "status": "waiting on client",
+    "due_date": "01/01/1970",
+    "assignees": "Chitvan Garg",
+    "delivery_status": "NO_DUE_DATE"
+  },
+  {
+    "name": "[Congstar|DKE-378] Neue Produkt Benefits",
+    "status": "waiting on client",
+    "due_date": "27/08/2025",
+    "assignees": "",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "Dummy",
+    "status": "backlog",
+    "due_date": "01/01/1970",
+    "assignees": "Chitvan Garg",
+    "delivery_status": "NO_DUE_DATE"
+  },
+  {
+    "name": "[Alltricks] Mobile filters",
+    "status": "waiting on client",
+    "due_date": "08/08/2025",
+    "assignees": "Pranjali Naik",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[LIDL|Global|T81] List Price Color",
+    "status": "done",
+    "due_date": "08/08/2025",
+    "assignees": "",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[Impo|P05] Personalisierte Beratung",
+    "status": "waiting on client",
+    "due_date": "31/07/2025",
+    "assignees": "Pranjali Naik",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[Petit Bateau][FR][PDP] Afficher une photo packshot vs portée -EN",
+    "status": "waiting on client",
+    "due_date": "28/07/2025",
+    "assignees": "Akriti Bajpai",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[P&C|DE|T113] New promo box design for PDPs",
+    "status": "done",
+    "due_date": "16/07/2025",
+    "assignees": "",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[LIDL|DE|T160] Hint Wine & Spirit",
+    "status": "qa in progress",
+    "due_date": "18/04/2025",
+    "assignees": "Pranjali Naik",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[EF|T42|CRO62] Warenkorb Sticky Access Checkout",
+    "status": "ask for simlink",
+    "due_date": "10/06/2025",
+    "assignees": "Akriti Bajpai",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[Beurer|GG|FR] Global Goals - FR",
+    "status": "waiting on client",
+    "due_date": "09/05/2024",
+    "assignees": "",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "Dummy",
+    "status": "backlog",
+    "due_date": "01/01/1970",
+    "assignees": "",
+    "delivery_status": "NO_DUE_DATE"
+  },
+  {
+    "name": "[Conrad|GG] Global Goals",
+    "status": "dev in progress",
+    "due_date": "01/01/1970",
+    "assignees": "[1 DEV]Abhikant Singh",
+    "delivery_status": "NO_DUE_DATE"
+  },
+  {
+    "name": "[Berner|T38|DE] Variant Selector",
+    "status": "done",
+    "due_date": "29/02/2024",
+    "assignees": "",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "Meetings",
+    "status": "backlog",
+    "due_date": "01/01/1970",
+    "assignees": "",
+    "delivery_status": "NO_DUE_DATE"
+  },
+  {
+    "name": "Miscellaneous work",
+    "status": "backlog",
+    "due_date": "01/01/1970",
+    "assignees": "",
+    "delivery_status": "NO_DUE_DATE"
+  },
+  {
+    "name": "Dummy task - ABHIKANT",
+    "status": "backlog",
+    "due_date": "01/01/1970",
+    "assignees": "[1 DEV]Abhikant Singh",
+    "delivery_status": "NO_DUE_DATE"
+  },
+  {
+    "name": "Dummy task - ANKIT",
+    "status": "backlog",
+    "due_date": "01/01/1970",
+    "assignees": "[1 DEV] Ankit Jangra",
+    "delivery_status": "NO_DUE_DATE"
+  },
+  {
+    "name": "Dummy task - PRANJALI ",
+    "status": "backlog",
+    "due_date": "01/01/1970",
+    "assignees": "Pranjali Naik",
+    "delivery_status": "NO_DUE_DATE"
+  },
+  {
+    "name": "[BTI|T35] Bilderkarussel PDP",
+    "status": "waiting on client",
+    "due_date": "24/02/2023",
+    "assignees": "[1 DEV] Ankit Jangra",
+    "delivery_status": "OVERDUE"
+  },
+  {
+    "name": "[DE Internal]",
+    "status": "backlog",
+    "due_date": "01/01/1970",
+    "assignees": "",
+    "delivery_status": "NO_DUE_DATE"
+  },
+  {
+    "name": "DE Internal Testing ",
+    "status": "backlog",
+    "due_date": "01/01/1970",
+    "assignees": "",
+    "delivery_status": "NO_DUE_DATE"
+  }
+]
