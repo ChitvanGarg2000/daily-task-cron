@@ -1,0 +1,36 @@
+name: Daily Task Update
+
+on:
+  schedule:
+    # Runs every day at 9 AM UTC (adjust the time as needed)
+    - cron: '0 9 * * *'
+  # Allow manual trigger from Actions tab
+  workflow_dispatch:
+
+jobs:
+  send-daily-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run daily task updater
+        env:
+          CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+          LIST_ID: ${{ secrets.LIST_ID }}
+          GOOGLE_CHAT_WEBHOOK_URL: ${{ secrets.GOOGLE_CHAT_WEBHOOK_URL }}
+        run: node script.js
+
+      - name: Log execution
+        if: always()
+        run: echo "Daily task update completed at $(date)"
