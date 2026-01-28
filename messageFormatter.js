@@ -24,14 +24,14 @@ function formatTask(task) {
 
 function formatSection(title, tasks) {
   if (!tasks.length) return '';
-  return `*${title}*\n${tasks.map(formatTask).join('\n\n')}\n\n`;
+  return `*${title}*\n${tasks.map((task) => formatTask(task)).join('\n\n')}\n\n`;
 }
 
 export function buildMessage(tasks) {
-  const today = tasks.filter(t => t.delivery_status === 'TODAY');
-  const overdue = tasks.filter(t => t.delivery_status === 'OVERDUE');
-  const upcoming = tasks.filter(t => t.delivery_status === 'UPCOMING');
-  const noDueDate = tasks.filter(t => t.delivery_status === 'NO_DUE_DATE');
+  const today = tasks.filter((t) => t.delivery_status === 'TODAY');
+  const overdue = tasks.filter((t) => t.delivery_status === 'OVERDUE');
+  const upcoming = tasks.filter((t) => t.delivery_status === 'UPCOMING');
+  const noDueDate = tasks.filter((t) => t.delivery_status === 'NO_DUE_DATE');
 
   let text = `📌 *Daily Task Update*\n\n`;
 

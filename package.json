@@ -4,14 +4,13 @@
   "description": "",
   "main": "script.js",
   "type": "module",
-  "dependencies": {
-    "axios": "^1.13.4",
-    "dayjs": "^1.11.19",
-    "dotenv": "^17.2.3"
+  "devDependencies": {
+    "dotenv": "^17.2.3",
+    "esbuild": "^0.27.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild script.js --bundle --platform=node --outfile=dist/index.js"
   },
   "keywords": [],
   "author": "",
